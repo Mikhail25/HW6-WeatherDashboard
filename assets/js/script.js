@@ -9,7 +9,7 @@ var API_KEY = "59522776659ba117cd7e6a6ffa40c063"
 var limit = '1';
 
 function findLocation(city){
-    var baseUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${limit}&appid=${API_KEY}`
+    var baseUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${limit}&appid=${API_KEY}`
     //var baseUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`;
 
     fetch(baseUrl)
@@ -202,6 +202,7 @@ function timeFormat(date){
 searchButton.addEventListener('click', function (event){
 
     console.log(searchText.value);
+
     findLocation(searchText.value);
 });
 
