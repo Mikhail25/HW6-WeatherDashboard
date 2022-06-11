@@ -3,7 +3,8 @@ var searchButton = document.querySelector('#search-button');
 var weatherResults = document.querySelector('#weather-results');
 var pastResults = document.querySelector('#past-results');
 
-var buttonPastResults = document.querySelector('.search-item');
+
+
 var API_KEY = "59522776659ba117cd7e6a6ffa40c063"
 var limit = '1';
 
@@ -203,5 +204,15 @@ searchButton.addEventListener('click', function (event){
     console.log(searchText.value);
     findLocation(searchText.value);
 });
+
+pastResults.addEventListener('click', function (event){
+    //event.preventDefault();
+
+    //console.log("Button clicked");
+    //console.log(event.target.textContent);
+    findLocation(event.target.textContent);
+});
+
+showPastSearches();
 
 //console.log("Testing");
