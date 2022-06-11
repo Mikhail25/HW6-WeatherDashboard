@@ -52,7 +52,7 @@ function findWeather(lat, lon) {
 
 //Gets weather by days
 function getDailyWeather(lat, lon, uvi) {
-    var baseUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
+    var baseUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
 
     fetch(baseUrl)
     .then((response) => {
