@@ -19,3 +19,5 @@ This program includes:
 ![Screenshot of the Aplication result](./image/Screen1.png)
 
 ![Screenshot of entering a new result](./image/Screen2.png)
+
+[Link to the website](https://mikhail25.github.io/HW6-WeatherDashboard/)
